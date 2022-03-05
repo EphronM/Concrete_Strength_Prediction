@@ -5,7 +5,7 @@ from static.load_css import local_css
 import numpy as np
 local_css("static/style.css")
 
-model_dir = 'artifacts\prediction_model.pkl'
+model_dir = 'artifacts/prediction_model.pkl'
 model = pickle.load(open(model_dir, 'rb'))
 
 def get_base64(bin_file):
